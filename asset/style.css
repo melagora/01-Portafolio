@@ -168,3 +168,20 @@ p {
   text-align: center;
   padding: 10px;
 }
+
+.main{
+  text-align: justify;
+}
+
+.main section {
+  height: auto;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.163);
+  padding-bottom: 30px;
+}
+
+.about-me {
+  padding: 0 30px;
+}
+.about-me p {
+  margin-bottom: 1rem; /* Ajusta el valor según tu preferencia */
+}
