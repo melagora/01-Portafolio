@@ -114,7 +114,7 @@ p {
   flex-direction: column;
   justify-content: center; /* Centramos los elementos horizontalmente */
   align-items: center; /* Centramos los elementos verticalmente*/
-  height: 510px;
+  height: 100vh;
   line-height: 40px; /* Ajusta el valor según tu necesidad */
 }
 
