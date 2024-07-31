@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
+  font-weight: 600;
   margin: 0;
   padding: 0;
   line-height: 1.5; /* Establece un interlineado */
@@ -63,7 +64,7 @@ p {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background-color: #ff7f50;
+  background-color: #e34f26;
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -79,11 +80,10 @@ p {
 }
 
 .back-to-top:hover {
-  background-color: #ff4d01;
-  
+  background-color: rgb(125, 37, 0);
 }
 
-.header{
+.header {
   background-image: url(/img/bannerHome.jpg);
   background-size: 250%;
   background-position: left;
@@ -97,6 +97,7 @@ p {
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
   background-color: #dddddd;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .name p {
@@ -114,7 +115,7 @@ p {
   padding: 0 10px;
 }
 
-.presentation{
+.presentation {
   display: flex; /* Convertimos .presentation en un contenedor flex */
   flex-direction: column;
   justify-content: center; /* Centramos los elementos horizontalmente */
@@ -134,20 +135,21 @@ p {
   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
-.btn-presentation{
+.btn-presentation {
   padding: 20px;
 }
 
 .presentation button {
   padding: 15px 20px;
-  background-color: #ff7f50;
+  background-color: #e34f26;
   border-radius: 10px;
   border: none;
   font-weight: bold;
 }
 
 .presentation button:hover {
-  background-color: #ff4d01;
+  background-color: rgb(125, 37, 0);
+  color: white;
   font-size: 18px;
 }
 
@@ -169,19 +171,49 @@ p {
   padding: 10px;
 }
 
-.main{
+.main {
   text-align: justify;
 }
 
 .main section {
   height: auto;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.163);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   padding-bottom: 30px;
 }
 
-.about-me {
+.about-me,
+.tecnologies {
   padding: 0 30px;
 }
-.about-me p {
+
+.about-me > p {
   margin-bottom: 1rem; /* Ajusta el valor según tu preferencia */
+}
+
+.tecnologies p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.btn-tecnologies {
+  padding: 10px;
+  border: none;
+  margin-bottom: 1rem;
+  margin-left: 0.3rem;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10%;
+}
+
+.tecnologies div {
+  display: flex; /* Convertimos .presentation en un contenedor flex */
+  flex-wrap: wrap;
+  justify-content: center; /* Centramos los elementos horizontalmente */
+  align-items: center; /* Centramos los elementos verticalmente*/
+}
+
+.btn-tecnologies:hover {
+  font-size: 14px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
