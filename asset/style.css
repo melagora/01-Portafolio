@@ -217,3 +217,41 @@ p {
   font-size: 14px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
+
+.education{
+  text-align: center;
+}
+
+.education-hig, .education-curse{
+  padding: 30px;
+}
+
+.education-hig p, .education-curse p{
+  display: flex; /* Convertimos el contenedor principal en un contenedor flex */
+  justify-content: center; /* Centramos los elementos hijos horizontalmente */
+  align-items: center; /* Centramos los elementos hijos verticalmente */
+}
+
+.hig-card, .curse-card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  height: 100px;
+  margin-bottom: 20px;
+  gap: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.subtittle{
+  font-weight: 100;
+  font-style: italic;
+}
+
+.hig-card:hover, .curse-card:hover{
+  background-color: #ffac95;
+  height: 120px;
+}
