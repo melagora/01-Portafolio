@@ -3,7 +3,6 @@ html {
   box-sizing: border-box;
   font-size: 16px; /* Establece un tamaño de fuente base */
   scroll-behavior: smooth;
-
 }
 
 *,
@@ -19,7 +18,11 @@ body {
   padding: 0;
   line-height: 1.5; /* Establece un interlineado */
   color: #333; /* Establece un color de texto base */
-  background-image: linear-gradient(to left, rgba(128, 128, 128, 0.2), rgba(120, 28, 0, 0.2)); /* Establece un color de fondo base */
+  background-image: linear-gradient(
+    to left,
+    rgba(128, 128, 128, 0.2),
+    rgba(120, 28, 0, 0.2)
+  ); /* Establece un color de fondo base */
 }
 
 .grid-container {
@@ -61,6 +64,49 @@ p {
   margin: 0;
 }
 
+/* <!-- INICIO MODAL - MENSAJE DE BIENVENIDA --> */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content p{
+  padding-bottom: 10px;
+}
+
+.button-modal {
+  padding: 10px 15px;
+  background-color: #e34f26;
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: rgb(125, 37, 0);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.button-modal:hover {
+  background-color: rgb(125, 37, 0);
+  color: rgb(0, 0, 0);
+  border-color: #e34f26;
+}
+
+/* <!-- FIN MODAL - MENSAJE DE BIENVENIDA --> */
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -76,8 +122,6 @@ p {
   z-index: 999;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
-
-
 
 .grid-container a button {
   font-size: 24px;
@@ -101,7 +145,11 @@ p {
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(to left, rgba(128, 128, 128, 0.2), rgba(120, 28, 0, 0.2)); /* Establece un color de fondo base */
+  background-image: linear-gradient(
+    to left,
+    rgba(128, 128, 128, 0.2),
+    rgba(120, 28, 0, 0.2)
+  ); /* Establece un color de fondo base */
 }
 
 .name p {
@@ -109,7 +157,6 @@ p {
   font-weight: 900;
   color: black;
 }
-
 
 .navbar ul {
   display: flex;
@@ -134,16 +181,16 @@ p {
   line-height: 30px; /* Ajusta el valor según tu necesidad */
 }
 
-.tittle-presentation{
+.tittle-presentation {
   padding-top: 20px;
-  font-family: 'Lucida';
+  font-family: "Lucida";
   font-size: 30px;
   padding-bottom: 10px;
   color: #000000;
 }
 
-.subtittle2-presentation  {
-  font-family: 'Lucida';
+.subtittle2-presentation {
+  font-family: "Lucida";
   font-size: 25px;
   color: #000000;
 }
@@ -182,11 +229,11 @@ p {
 .presentation button:hover {
   background-color: rgb(125, 37, 0);
   color: rgb(0, 0, 0);
-  border-color: #e34f26
+  border-color: #e34f26;
 }
 
 .social-media {
-  display: flex; 
+  display: flex;
   gap: 10px;
 }
 
@@ -199,7 +246,7 @@ p {
 
 .redes div {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   width: 50px;
   height: 50px;
   background-color: white;
@@ -212,7 +259,7 @@ p {
   margin: 5px;
 }
 
-.redes div:hover{
+.redes div:hover {
   background-color: #e34f26;
 }
 
@@ -240,7 +287,8 @@ p {
   margin-bottom: 1rem; /* Ajusta el valor según tu preferencia */
 }
 
-.tittle-skills1, .tittle-skills2 {
+.tittle-skills1,
+.tittle-skills2 {
   font-size: 18px;
 }
 
@@ -277,21 +325,24 @@ p {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.education{
+.education {
   text-align: center;
 }
 
-.education-hig, .education-curse{
+.education-hig,
+.education-curse {
   padding: 40px;
 }
 
-.education-hig p, .education-curse p{
+.education-hig p,
+.education-curse p {
   display: flex; /* Convertimos el contenedor principal en un contenedor flex */
   justify-content: center; /* Centramos los elementos hijos horizontalmente */
   align-items: center; /* Centramos los elementos hijos verticalmente */
 }
 
-.hig-card, .curse-card {
+.hig-card,
+.curse-card {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   height: 120px;
   margin-bottom: 20px;
@@ -307,20 +358,24 @@ p {
   border: 3px #e34f26 solid;
 }
 
-.hig-card p, .curse-card p {
+.hig-card p,
+.curse-card p {
   margin: 0 20px;
 }
 
-.title-educationhig, .title-educationcurse {
+.title-educationhig,
+.title-educationcurse {
   font-size: 20px;
 }
 
-.subtittle-higcard, .subtittle-cursecard{
+.subtittle-higcard,
+.subtittle-cursecard {
   font-weight: 100;
   font-style: italic;
 }
 
-.hig-card:hover, .curse-card:hover{
+.hig-card:hover,
+.curse-card:hover {
   background-color: #ffac95;
   height: 130px;
 }
