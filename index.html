@@ -11,9 +11,7 @@
     <title>Portafolio - <Melvin González></title>
   </head>
   <body class="grid-container" id="home">
-    <button class="back-to-top">
-      <span class="arrow"><a href="#home">↑</a></span>
-    </button>
+      <a href="#home"> <button class="back-to-top">↑</button></a>
     <header class="header">
       <section class="navigation">
         <div class="name">
@@ -21,7 +19,6 @@
         </div>
         <div class="navbar">
           <ul>
-            <li><a href="#home">Inicio</a></li>
             <li><a href="#about-me">Sobre mi</a></li>
             <li><a href="#skills">Habilidades</a></li>
             <li><a href="#education">Educación</a></li>
@@ -32,14 +29,28 @@
       </section>
       <section class="presentation">
         <div class="image-personal"></div>
-        <p>¡Hola!</p>
+        <p class="tittle-presentation">¡Hola!</p>
         <p>Te saluda Melvin - < Desarrollador Web Jr ></p>
         <p>Bienvenido a mi portafolio</p>
-        <div class="btn-presentation"><button>Sobre mi</button></div>
+        <div class="btn-presentation">
+          <a href="#about-me"> <button>Sobre mi</button>
+          </a>
+        </div>
         <div class="social-media">
           <p>Redes sociales:</p>
-          <img src="/img/logolinkedln.png" alt="" />
-          <img src="/img/image.png" alt="" />
+          <div class="redes">
+            <a href="https://www.linkedin.com/in/melagora/" target="_blank" rel="noopener">
+              <div class="red1">
+                <img src="/img/logolinkedln.png" alt="LinkedIn" />
+              </div>
+            </a>
+              <a href="https://github.com/melagora" target="_blank" rel="noopener">
+                <div class="red2">
+                  <img src="/img/logogithub.png" alt="" />
+                </div>
+              </a>
+            </div>            
+          </div>
         </div>
       </section>
     </header>
@@ -74,7 +85,7 @@
         <div>
           <h2 class="tittle">Habilidades</h2>
           <div class="tecnologies">
-            <p>Tencologías de conocimiento básico - intermedio</p>
+            <p class="tittle-skills1">Tencologías de conocimiento básico - intermedio</p>
             <div>
               <button class="btn-tecnologies" style="background-color: #e34f26;">HTML5</button>
               <button class="btn-tecnologies" style="background-color: #1572b6;">CSS3</button>
@@ -89,7 +100,7 @@
               <button class="btn-tecnologies" style="background-color: #121013; color: white;">GITHUB</button>
               <button class="btn-tecnologies" style="background-color: #1572b6;">TRELLO</button>
             </div>
-            <p>
+            <p class="tittle-skills2">
               Tencologías de conocimiento básico o que he probado alguna vez
             </p>
             <div>
@@ -117,56 +128,56 @@
       <section class="education" id="education">
         <div>
           <h2 class="tittle">Educación</h2>
-          <p>Educación Superior</p>
+          <p class="title-educationhig">Educación Superior</p>
           <div class="education-hig">
             <div class="hig-card">
               <p>Ingeniería de Sistemas Informáticos</p>
-              <p class="subtittle">Universidad de El Salvador</p>
-              <p class="subtittle">(Cuarto año - En curso)</p>
+              <p class="subtittle-higcard">Universidad de El Salvador</p>
+              <p class="subtittle-higcard">(Cuarto año - En curso)</p>
             </div>
             <div class="hig-card">
               <p>Bachillerato Técnico Vocacional</p>
-              <p class="subtittle">C.E. Martín Romeo Monterrosa Rodríguez</p>
-              <p class="subtittle">El Salvador - 2015</p>
+              <p class="subtittle-higcard">C.E. Martín Romeo Monterrosa Rodríguez</p>
+              <p class="subtittle-higcard">El Salvador - 2015</p>
             </div>
           </div>
 
-          <p>Educación en cursos</p>
+          <p class="title-educationcurse">Educación en cursos</p>
           <div class="education-curse">
             <div class="curse-card">
               <p>FullStack Jr</p>
-              <p class="subtittle">Bootcamp KODIGO - El Salvador</p>
-              <p class="subtittle">(En curso de Julio a Diciembre - 2024)</p>
+              <p class="subtittle-cursecard">Bootcamp KODIGO - El Salvador</p>
+              <p class="subtittle-cursecard">(En curso de Julio a Diciembre - 2024)</p>
             </div>
             <div class="curse-card">
               <p>Java y Spring Boot</p>
-              <p class="subtittle">Alura Latam - Online</p>
-              <p class="subtittle">Octubre de 2023</p>
+              <p class="subtittle-cursecard">Alura Latam - Online</p>
+              <p class="subtittle-cursecard">Octubre de 2023</p>
             </div>
             <div class="curse-card">
               <p>Introducción a SQL con MySQL</p>
-              <p class="subtittle">Alura Latam - Online</p>
-              <p class="subtittle">Agosto de 2023</p>
+              <p class="subtittle-cursecard">Alura Latam - Online</p>
+              <p class="subtittle-cursecard">Agosto de 2023</p>
             </div>
             <div class="curse-card">
               <p>Introducción a SQL con MySQL</p>
-              <p class="subtittle">Alura Latam - Online</p>
-              <p class="subtittle">Agosto de 2023</p>
+              <p class="subtittle-cursecard">Alura Latam - Online</p>
+              <p class="subtittle-cursecard">Agosto de 2023</p>
             </div>
             <div class="curse-card">
               <p>Principiante en Programación G5 - ONE</p>
-              <p class="subtittle">Alura Latam - Online</p>
-              <p class="subtittle">Mayo de 2023</p>
+              <p class="subtittle-cursecard">Alura Latam - Online</p>
+              <p class="subtittle-cursecard">Mayo de 2023</p>
             </div>
             <div class="curse-card">
               <p>Curso Profesional de HTML y CSS</p>
-              <p class="subtittle">Azul Web - Online</p>
-              <p class="subtittle">Abril de 2023</p>
+              <p class="subtittle-cursecard">Azul Web - Online</p>
+              <p class="subtittle-cursecard">Abril de 2023</p>
             </div>
             <div class="curse-card">
               <p>Scrum Foundation Professional Certificate SFPC (v2020) - Spanish -</p>
-              <p class="subtittle">CertiProf</p>
-              <p class="subtittle">Abril de 2023</p>
+              <p class="subtittle-cursecard">CertiProf</p>
+              <p class="subtittle-cursecard">Abril de 2023</p>
             </div>
           </div>
         </div>

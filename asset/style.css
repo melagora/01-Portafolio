@@ -73,9 +73,10 @@ p {
   font-size: 16px;
   border-radius: 4px;
   z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
-.arrow {
+.grid-container a button {
   font-size: 24px;
 }
 
@@ -121,7 +122,14 @@ p {
   justify-content: center; /* Centramos los elementos horizontalmente */
   align-items: center; /* Centramos los elementos verticalmente*/
   height: 540px;
-  line-height: 40px; /* Ajusta el valor según tu necesidad */
+  line-height: 30px; /* Ajusta el valor según tu necesidad */
+}
+
+.tittle-presentation {
+  padding-top: 10px;
+  font-family: 'Lucida';
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .image-personal {
@@ -131,6 +139,7 @@ p {
   width: 150px; /* Ajusta el tamaño según tus necesidades */
   height: 150px;
   border-radius: 50%;
+  border: 3px white solid;
   background-color: #f0f0f0; /* Puedes cambiar el color de fondo */
   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
@@ -140,30 +149,51 @@ p {
 }
 
 .presentation button {
-  padding: 15px 20px;
+  padding: 10px 15px;
   background-color: #e34f26;
   border-radius: 10px;
-  border: none;
+  border: 5px solid;
+  border-color: rgb(125, 37, 0);
+  color: white;
   font-weight: bold;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
 }
 
 .presentation button:hover {
   background-color: rgb(125, 37, 0);
-  color: white;
-  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border-color: #e34f26
 }
 
 .social-media {
-  display: flex; /* Convertimos .presentation en un contenedor flex */
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; /* Centramos los elementos verticalmente*/
+  display: flex; 
   gap: 10px;
 }
 
-.social-media img {
+.redes {
   display: flex;
-  width: 10%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.redes div {
+  display: flex;
+  flex-direction:row;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: rgb(125, 37, 0);
+}
+
+.red2 img {
+  margin: 5px;
+}
+
+.redes div:hover{
+  background-color: #e34f26;
 }
 
 .tittle {
@@ -190,6 +220,14 @@ p {
   margin-bottom: 1rem; /* Ajusta el valor según tu preferencia */
 }
 
+.tittle-skills1, .tittle-skills2 {
+  font-size: 18px;
+}
+
+/* .tittle-skills2 {
+  padding-top: 20px;
+} */
+
 .tecnologies p {
   text-align: center;
   padding-bottom: 20px;
@@ -211,6 +249,7 @@ p {
   flex-wrap: wrap;
   justify-content: center; /* Centramos los elementos horizontalmente */
   align-items: center; /* Centramos los elementos verticalmente*/
+  padding-bottom: 20px;
 }
 
 .btn-tecnologies:hover {
@@ -234,7 +273,7 @@ p {
 
 .hig-card, .curse-card {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  height: 100px;
+  height: 120px;
   margin-bottom: 20px;
   gap: 0;
   display: flex;
@@ -246,12 +285,20 @@ p {
   border-radius: 10px;
 }
 
-.subtittle{
+.hig-card p, .curse-card p {
+  margin: 0 20px;
+}
+
+.title-educationhig, .title-educationcurse {
+  font-size: 20px;
+}
+
+.subtittle-higcard, .subtittle-cursecard{
   font-weight: 100;
   font-style: italic;
 }
 
 .hig-card:hover, .curse-card:hover{
   background-color: #ffac95;
-  height: 120px;
+  height: 130px;
 }
