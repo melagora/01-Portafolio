@@ -73,8 +73,10 @@ p {
   font-size: 16px;
   border-radius: 4px;
   z-index: 999;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
+
+
 
 .grid-container a button {
   font-size: 24px;
@@ -85,7 +87,7 @@ p {
 }
 
 .header {
-  background-image: url(/img/bannerHome.jpg);
+  background-image: url(/img/bannerHome2.jpg);
   background-size: 250%;
   background-position: left;
   height: 100vh;
@@ -113,7 +115,7 @@ p {
   font-size: 18px;
   flex-wrap: wrap; /* Esta propiedad es clave para el efecto deseado */
   justify-content: center; /* Centra los elementos horizontalmente */
-  padding: 0 10px;
+  padding: 0 40px;
 }
 
 .presentation {
