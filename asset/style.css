@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   font-size: 16px; /* Establece un tamaño de fuente base */
   scroll-behavior: smooth;
+
 }
 
 *,
@@ -18,7 +19,7 @@ body {
   padding: 0;
   line-height: 1.5; /* Establece un interlineado */
   color: #333; /* Establece un color de texto base */
-  background-color: #f5f5f5; /* Establece un color de fondo base */
+  background-image: linear-gradient(to left, rgba(128, 128, 128, 0.2), rgba(120, 28, 0, 0.2)); /* Establece un color de fondo base */
 }
 
 .grid-container {
@@ -87,8 +88,8 @@ p {
 }
 
 .header {
-  background-image: url(/img/bannerHome2.jpg);
-  background-size: 250%;
+  background-image: url(/img/bannerHome3.jpg);
+  /* background-size: 250%; */
   background-position: left;
   height: 100vh;
 }
@@ -99,13 +100,14 @@ p {
   flex-direction: column; /* Cambia la dirección a columna para apilar los elementos */
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
-  background-color: #dddddd;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to left, rgba(128, 128, 128, 0.2), rgba(120, 28, 0, 0.2)); /* Establece un color de fondo base */
 }
 
 .name p {
   font-size: 20px;
   font-weight: 900;
+  color: black;
 }
 
 .navbar ul {
@@ -117,6 +119,10 @@ p {
   justify-content: center; /* Centra los elementos horizontalmente */
   padding: 0 40px;
 }
+
+/* .navbar ul li:hover {
+  color: #e34f26;
+} */
 
 .presentation {
   display: flex; /* Convertimos .presentation en un contenedor flex */
@@ -239,7 +245,7 @@ p {
   padding: 10px;
   border: none;
   margin-bottom: 1rem;
-  margin-left: 0.3rem;
+  margin-left: 4px;
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
@@ -256,7 +262,7 @@ p {
 
 .btn-tecnologies:hover {
   font-size: 14px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .education{
@@ -264,7 +270,7 @@ p {
 }
 
 .education-hig, .education-curse{
-  padding: 30px;
+  padding: 40px;
 }
 
 .education-hig p, .education-curse p{
