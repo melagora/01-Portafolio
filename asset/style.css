@@ -110,6 +110,7 @@ p {
   color: black;
 }
 
+
 .navbar ul {
   display: flex;
   list-style: none;
@@ -133,11 +134,22 @@ p {
   line-height: 30px; /* Ajusta el valor según tu necesidad */
 }
 
-.tittle-presentation {
+.tittle-presentation{
   padding-top: 10px;
   font-family: 'Lucida';
   font-size: 30px;
   padding-bottom: 10px;
+  color: #000000;
+}
+
+.subtittle2-presentation  {
+  font-family: 'Lucida';
+  font-size: 28.5px;
+  color: #000000;
+}
+
+.tittle-social {
+  padding-top: 10px;
 }
 
 .image-personal {
