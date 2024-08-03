@@ -306,7 +306,7 @@ p {
   padding: 10px;
   border: none;
   margin-bottom: 1rem;
-  margin-left: 4px;
+  margin-left: 8px;
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
@@ -322,7 +322,7 @@ p {
 }
 
 .btn-tecnologies:hover {
-  font-size: 14px;
+  transform: scale(1.05);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -378,8 +378,9 @@ p {
 .hig-card:hover,
 .curse-card:hover {
   background-color: #ffac95;
-  height: 130px;
+  transform: scale(1.1);
 }
+
 .projects {
   padding: 0 40px;
 }
@@ -395,7 +396,8 @@ p {
   flex-wrap: nowrap;
   flex-direction: column;
   border: 3px #e34f26 solid;
-  color: #ffffff00;
+  color: transparent;
+  font-size: 35px;
 }
 
 .project1 {
@@ -416,5 +418,7 @@ p {
 }
 
 .project1:hover , .project2:hover , .project3:hover {
-  filter: brightness(40%); /* Ajusta el brillo y contraste */
+  opacity: 50%;
+  transform: scale(1.05);
+  color: transparent
 }
