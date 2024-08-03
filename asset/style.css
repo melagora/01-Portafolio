@@ -422,3 +422,26 @@ p {
   transform: scale(1.05);
   color: transparent
 }
+
+footer {
+  grid-template-columns: 1fr;
+  padding: 30px;
+}
+
+.ubicacion *,
+.contacto * {
+  align-items: flex-start;
+}
+
+.contacto {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contacto div {
+  padding-bottom: 20px;
+}
+
+.imgfooter {
+  width: 10%;
+}
