@@ -380,3 +380,41 @@ p {
   background-color: #ffac95;
   height: 130px;
 }
+.projects {
+  padding: 0 40px;
+}
+
+.contenedor-projects div {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  height: 200px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border: 3px #e34f26 solid;
+  color: #ffffff00;
+}
+
+.project1 {
+  background-image: url(/img/proyecto1Restaurante.png);
+  background-size: cover;
+  transition: filter 0.3s ease; /* Agrega una transición suave */
+}
+.project2 {
+  background-image: url(/img/proyecto2BlogCafe.png);
+  background-size: cover;
+  transition: filter 0.3s ease; /* Agrega una transición suave */
+}
+
+.project3 {
+  background-image: url(/img/proyecto3PageRecetas.png);
+  background-size: cover;
+  transition: filter 0.3s ease; /* Agrega una transición suave */
+}
+
+.project1:hover , .project2:hover , .project3:hover {
+  filter: brightness(40%); /* Ajusta el brillo y contraste */
+}
