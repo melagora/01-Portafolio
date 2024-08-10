@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   font-size: 16px; /* Establece un tamaño de fuente base */
   scroll-behavior: smooth;
+  background-image: url(/img/bannerHome3.jpg);
 }
 
 *,
@@ -85,7 +86,7 @@ p {
   text-align: center;
 }
 
-.modal-content p{
+.modal-content p {
   padding-bottom: 10px;
 }
 
@@ -417,15 +418,29 @@ p {
   transition: filter 0.3s ease; /* Agrega una transición suave */
 }
 
-.project1:hover , .project2:hover , .project3:hover {
+.project4 {
+  background-image: url(/img/proyecto4BootStrap.png);
+  background-size: cover;
+  transition: filter 0.3s ease; /* Agrega una transición suave */
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover {
   opacity: 50%;
   transform: scale(1.05);
-  color: transparent
+  color: transparent;
 }
 
 footer {
   grid-template-columns: 1fr;
   padding: 30px;
+  background-image: linear-gradient(
+    to left,
+    rgba(134, 0, 0, 0.2),
+    rgba(176, 41, 0, 0.2)
+  ); /* Establece un color de fondo base */
 }
 
 .ubicacion *,
@@ -444,4 +459,62 @@ footer {
 
 .imgfooter {
   width: 10%;
+}
+
+/* adaptación para dispositivos de pantallas súper pequeñas (casi obsoletos) */
+@media only screen and (min-width: 320px) {
+}
+
+/* adaptación para dispositivos de pantallas de la mayoria de telefonos Celulares */
+@media only screen and (min-width: 400px) {
+}
+
+/* adaptación para dispositivos de pantallas de algunos celulares de mayor pixelaje y tablets*/
+@media only screen and (min-width: 600px) {
+}
+
+/* adaptación para dispositivos de pantallas en tables y algunas laptops*/
+@media only screen and (min-width: 992px) {
+  html {
+    background-size: cover;
+    background-position: center right;
+  }
+  main {
+    padding: 0px 300px;
+  }
+
+  .contenedor-projects div {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    height: 400px;
+    margin-bottom: 30px;
+  }
+
+  .about-me,
+  .skills,
+  .education,
+  .projects {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .navigation {
+    padding: 20px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row; /* Cambia la dirección a columna para apilar los elementos */
+  }
+
+  .name,
+  .navbar {
+    flex: 1;
+  }
+
+  .hig-card:hover,
+  .curse-card:hover {
+    background-color: #ffac95;
+    transform: scale(1.05);
+  }
+}
+
+/* adaptación para dispositivos de pantallas en laptos y pantallas de mayor pixelaje*/
+@media only screen and (min-width: 1200px) {
 }
